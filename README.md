@@ -12,15 +12,21 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
-## Primary conversion
+## Conversion destinations
 
-The one action on the page is **Book Your Assessment**. The short form at `#apply` opens a prefilled email to `info@richardaceves.com`. Wire that form to Typeform, Calendly, or the existing Richard Aceves intake when those URLs are ready.
+Verified from the live [back-pain program page](https://www.richardaceves.com/backpain):
 
-## Swap-in assets
+- **Fixing Back Pain For Good — $299** (primary): `https://moved.thinkific.com/enroll/2481437?price_id=3278196`
+- **Fixing Back Pain: Phase 1 — $79** (entry): `https://moved.thinkific.com/enroll/3250812?price_id=4144370`
 
-- Founder video already uses Richard’s public method video. If a host blocks YouTube embeds, swap in a self-hosted file in the same modal.
-- Nikki’s video testimonial has a labeled slot in the proof section.
-- Additional member quotes can replace the labeled placeholders without layout changes.
+Checkout is on Thinkific (Moved Academy). Do not invent product IDs or swap these URLs without owner confirmation.
+
+## Legal
+
+- [Terms](https://www.richardaceves.com/terms)
+- [Privacy](https://www.richardaceves.com/privacy)
+- [Refund policy](https://www.richardaceves.com/refund-policy)
+- Contact: `info@richardaceves.com`
 
 ## Brand
 

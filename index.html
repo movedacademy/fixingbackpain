@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fixing Back Pain For Good | Richard Aceves</title>
-  <meta name="description" content="A root-cause, nervous-system-first program by Richard Aceves for people tired of recurring back pain and temporary relief.">
+  <meta name="description" content="A self-paced three-phase movement system by Richard Aceves. Start with Phase 1 if you are in pain now, or take the complete course with two calls and lifetime access.">
   <meta property="og:title" content="Fixing Back Pain For Good | Richard Aceves">
-  <meta property="og:description" content="A root-cause, nervous-system-first program by Richard Aceves for people tired of recurring back pain and temporary relief.">
+  <meta property="og:description" content="A self-paced three-phase movement system. Start with Phase 1 at $79 if you are in pain now, or take the complete $299 course.">
   <meta property="og:image" content="images/og.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!--
+    Verified Thinkific checkout (live richardaceves.com/backpain CTAs, 2026-09-06):
+      Full course $299 → https://moved.thinkific.com/enroll/2481437?price_id=3278196
+      Phase 1 $79     → https://moved.thinkific.com/enroll/3250812?price_id=4144370
+    TODO: Confirm first-name attribution for unnamed Drive testimonials before publishing names.
+    TODO: No analytics IDs exist in this repo. CTA clicks use data-cta / data-placement for a future tracker.
+    TODO: Confirm exact Thinkific post-purchase email copy (login vs. new account).
+  -->
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -26,245 +34,229 @@
         <span class="brand__program">Fixing Back Pain For Good</span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="#problem">The pattern</a>
+        <a href="#recognition">The pattern</a>
         <a href="#system">The system</a>
+        <a href="#offers">Start</a>
         <a href="#richard">Richard</a>
         <a href="#proof">Proof</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn btn--primary header-cta" href="#apply">Book Your Assessment</a>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <a class="btn btn--primary header-cta" href="https://moved.thinkific.com/enroll/2481437?price_id=3278196" target="_blank" rel="noopener noreferrer" data-cta="complete" data-placement="header">Start — $299</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav class="mobile-nav" aria-label="Mobile">
-      <a href="#problem">The pattern</a>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <a href="#recognition">The pattern</a>
       <a href="#system">The system</a>
+      <a href="#offers">Start</a>
       <a href="#richard">Richard</a>
       <a href="#proof">Proof</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn--primary" href="#apply">Book Your Assessment</a>
+      <a class="btn btn--primary" href="https://moved.thinkific.com/enroll/2481437?price_id=3278196" target="_blank" rel="noopener noreferrer" data-cta="complete" data-placement="mobile-nav">Start the complete system — $299</a>
+      <a class="btn btn--ghost" href="https://moved.thinkific.com/enroll/3250812?price_id=4144370" target="_blank" rel="noopener noreferrer" data-cta="phase1" data-placement="mobile-nav">Start Phase 1 — $79</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="wrap--wide hero__grid">
-        <div>
-          <p class="eyebrow">Richard Aceves presents</p>
-          <h1>Fixing Back Pain For Good</h1>
-          <p class="hero__kicker">Why your back pain keeps coming back — and how to fix the root cause.</p>
+        <div class="hero__copy-col">
+          <p class="eyebrow">Richard Aceves / Moved Academy</p>
+          <h1>You do not need to be afraid of your back forever.</h1>
+          <p class="hero__kicker">Fixing Back Pain For Good is a self-paced, three-phase movement system for people who are tired of temporary relief and ready to rebuild safety, confidence, and strength around movement.</p>
           <div class="hero__copy">
-            <p>Your back pain is probably not happening for the reason you’ve been told.</p>
-            <p>Most programs sell you six weeks of sets, reps, and positions to hit. That is not the same as teaching your body the tension it actually needs. If stretching, PT, chiropractic, injections, or rest still leave you in the same loop, there is usually a deeper pattern underneath it.</p>
+            <p>No gym. No equipment. No six-week finish line.</p>
+            <p>If you are in pain now, start with Phase 1. If you are ready to work through the whole process, take the complete course.</p>
           </div>
           <div class="btn-row">
-            <a class="btn btn--primary" href="#apply">Book Your Assessment</a>
-            <a class="btn btn--ghost btn--play" href="#method" data-open-video>Watch Richard Explain The Method</a>
+            <a class="btn btn--primary" href="https://moved.thinkific.com/enroll/2481437?price_id=3278196" target="_blank" rel="noopener noreferrer" data-cta="complete" data-placement="hero">Start the complete system — $299</a>
+            <a class="btn btn--ghost" href="https://moved.thinkific.com/enroll/3250812?price_id=4144370" target="_blank" rel="noopener noreferrer" data-cta="phase1" data-placement="hero">I’m in pain now — Start Phase 1 for $79</a>
           </div>
-          <div class="trust-row">
-            <span>Root-cause approach</span>
-            <span>Safety-first system</span>
-            <span>100% money-back guarantee</span>
+          <p class="trust-line">Self-paced video course · Lifetime access and updates · Two online calls with Richard included in the complete system</p>
+          <p class="scope-line">Educational movement guidance. Not medical diagnosis or treatment.</p>
+
+          <div class="hero-video">
+            <img src="images/intro-video.jpg" alt="" width="1280" height="720">
+            <button type="button" class="hero-video__play" data-open-video aria-label="Play course introduction video">
+              <span>Watch Richard explain the approach — 1:27</span>
+            </button>
           </div>
         </div>
         <figure class="hero-media">
           <div class="hero-media__frame">
-            <img src="images/richard-portrait.jpg" alt="Richard Aceves, movement coach and nervous-system educator, standing in a training space" width="992" height="1586" fetchpriority="high">
-            <span class="hero-media__badge">Your guide through the work</span>
+            <img src="images/richard-portrait.jpg" alt="Richard Aceves, movement coach, standing in a training space" width="992" height="1586" fetchpriority="high">
           </div>
           <figcaption class="hero-media__caption">
             <span>Richard Aceves</span>
-            <span>Movement coach · Nervous-system educator</span>
+            <span>Movement coach · Moved Academy</span>
           </figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section section--linen" id="problem">
-      <div class="wrap">
+    <section class="section section--linen" id="recognition">
+      <div class="wrap prose">
         <p class="section-kicker">If this sounds familiar</p>
-        <h2>You already know something is off.</h2>
-        <p class="section__intro">You don’t need another lecture about stretching. You need someone who can name what you’ve been living with — and explain why it never quite leaves.</p>
-        <div class="pain-grid">
-          <article class="pain-card">
-            <strong>You wake up stiff and already guarded.</strong>
-            <p>The day hasn’t started yet and your back is already negotiating. You move carefully. You check in with it before you check in with anything else.</p>
-          </article>
-          <article class="pain-card">
-            <strong>Sitting too long lights your back up.</strong>
-            <p>Desk. Car. Plane. The same flare, the same hunt for a position that doesn’t hurt. Position was never the whole problem.</p>
-          </article>
-          <article class="pain-card">
-            <strong>Training feels risky now.</strong>
-            <p>You used to load, bend, and move without a second thought. Now every lift comes with a calculation: is this going to set me back?</p>
-          </article>
-          <article class="pain-card">
-            <strong>You’ve tried the “right” things.</strong>
-            <p>PT. Chiropractic. Injections. Rest. Generic exercise plans. Relief shows up. Then it leaves. The cycle is exhausting.</p>
-          </article>
-          <article class="pain-card">
-            <strong>You’re starting to lose trust in your body.</strong>
-            <p>That’s the part nobody talks about. The pain is one thing. The fear of your own movement is another.</p>
-          </article>
-        </div>
-        <div class="reframe">
-          <p>The problem is not that your body is broken. The problem is that nobody has shown you the pattern behind your pain.</p>
-        </div>
+        <h2>You are not weak. Your body is trying to protect you.</h2>
+        <p>You do not need another exercise sheet. You already know the stretches, the foam roller, the workarounds. You get through a workout, a workday, a car ride — then you pay for it later.</p>
+        <p>Maybe you hesitate before you bend down. Maybe you skip lifting, running, travel, or playing with your kids because you do not trust what your back will do next. That is not a lack of effort. That is a body that learned to guard.</p>
+        <p>Relief that lasts a few days is not the same as having a process you understand. Different tools can help. Temporary relief is not the same as knowing what to do when the fear shows up again.</p>
+        <p class="pullquote pullquote--inline">The goal is not simply to complete the exercise. The goal is to build enough safety, connection, and strength that your body has more options when life asks you to move.</p>
       </div>
     </section>
 
-    <section class="section" id="why">
+    <section class="section" id="approach">
+      <div class="wrap prose">
+        <p class="section-kicker">The work</p>
+        <h2>The exercise is part of the tool. You are the work.</h2>
+        <p>Your body works as a unit. Forcing a range, chasing a position, or grinding a rep at all costs is not the same as owning the tension you can actually keep today.</p>
+        <p>Safety comes first. Confidence follows. Performance and daily life come after. The work is not linear. You stay with a phase as long as you need — based on how you feel, how much work you put in, and what your body is asking for today.</p>
+        <p>The point is not to avoid stress forever. It is to learn how to handle it again without your back taking over the job.</p>
+        <p class="pullquote pullquote--inline">Stop asking, “How far can I go?” Start asking, “How far can I go while staying connected?”</p>
+      </div>
+    </section>
+
+    <section class="section section--linen" id="system">
       <div class="wrap">
-        <p class="section-kicker">Why typical solutions fail</p>
-        <h2>Most people get treated where they feel pain. Not where the pattern starts.</h2>
-        <p class="section__intro">That is why the relief is temporary. If the bigger muscles are not doing the work, the smaller ones start screaming. Your back is often the messenger, not the whole story.</p>
-        <div class="fail-grid">
-          <article class="compare compare--old">
-            <p class="eyebrow eyebrow--stone">Symptom-chasing</p>
-            <h3>Where most people get stuck</h3>
-            <ul>
-              <li>Treat the sore spot and hope it holds</li>
-              <li>Stretch or smash what’s tight — especially the hip flexors</li>
-              <li>Six-week plans built on sets, reps, and positions</li>
-              <li>More skill, more exercises, same pattern</li>
-              <li>Adjust, inject, rest — then repeat</li>
-            </ul>
-          </article>
-          <article class="compare compare--new">
-            <p class="eyebrow">Root-cause work</p>
-            <h3>Where this work actually starts</h3>
-            <ul>
-              <li>Find which structural muscles stopped firing</li>
-              <li>Tension over position — what the body is doing, not just how it looks</li>
-              <li>Use breath to know if a range actually feels safe</li>
-              <li>Build connection first, then intensity, then skill</li>
-              <li>Stay in a phase as long as you need. No countdown.</li>
-            </ul>
-          </article>
-        </div>
-        <p class="fail-note">When the glutes, hamstrings, or psoas cannot hold tension, the body sends the job to smaller, more reactive muscles around the spine and hip. You feel that as pain. Stretching the tight spot does not restore the muscle that shut off.</p>
-        <p class="fail-note muted">The exercise is not what changes this. You are. The work is how you use tension, breath, and attention — not another list of “good for your back” movements.</p>
-      </div>
-    </section>
-
-    <section class="section section--linen" id="richard">
-      <div class="wrap--wide story">
-        <figure class="story__photo">
-          <img src="images/richard-laugh.jpg" alt="Richard Aceves smiling during a coaching session" width="2048" height="1365">
-        </figure>
-        <div class="story__copy">
-          <p class="section-kicker">The person behind the system</p>
-          <h2>I didn’t come to this work from a textbook.</h2>
-          <p>At 18, a rockslide hit me at 5,000 meters. My hip crushed into more than 35 pieces. I spent five months bedridden, relearned how to walk, and went through six surgeries — including a double ulnar replacement. The medical prognosis was simple: live with the pain, stay sedentary, deal with it.</p>
-          <p>I chose a different route. I taught myself to walk again. I rebuilt through strength, breath, and the slow work of trusting my body. Four months later I was deadlifting 200 kilograms.</p>
-          <p>The pain still came back later. Because I was still chasing symptoms — stretching what was tight, treating what hurt, missing the pattern. That’s when it clicked.</p>
-          <p class="pullquote">Symptoms are usually signals of displaced tension, not the true root cause. The body doesn’t lie. You just have to know how to read it.</p>
-          <p>I’m a movement coach and nervous-system educator. I’ve spent years in this work, thousands of assessments, seminars in 30 countries. The method is the same every time: meet people where they are. Build safety first, then confidence, then consistency.</p>
-          <div class="story-facts">
-            <div>
-              <strong>Lived experience</strong>
-              Rebuilt himself after catastrophic injury — then spent years learning why the pain still returned.
-            </div>
-            <div>
-              <strong>Hands-on coaching</strong>
-              Pattern recognition from thousands of live assessments, not a script.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mid-cta">
-      <div class="wrap">
-        <div class="mid-cta__box">
-          <div>
-            <p class="eyebrow">Start where you are</p>
-            <h2>If you’re hurting today, you don’t need to be “ready.” Phase 1 starts with connection, not a test.</h2>
-          </div>
-          <a class="btn btn--primary" href="#apply">Book Your Assessment</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="system">
-      <div class="wrap">
-        <p class="section-kicker">The 3-phase system</p>
-        <h2>Safety first. Then confidence. Then freedom.</h2>
-        <p class="section__intro">This is not a six-week countdown. You stay in each phase as long as you need. The goal is not to keep you dependent on a program. It is to give you tools you can keep using when life gets loud again.</p>
+        <p class="section-kicker">Three phases</p>
+        <h2>A path back to movement—not another six-week plan.</h2>
+        <p class="section__intro">This is a movement-education framework. Your pace and results will vary. You move forward when the work is landing — not because a calendar said so.</p>
         <div class="phases">
           <article class="phase phase--1">
             <div class="phase__meta">
               <span class="phase__num">01</span>
-              <span class="phase__tag">Sage · connection</span>
+              <span class="phase__tag">Reclaiming Safety</span>
             </div>
-            <h3>Reclaiming Safety</h3>
-            <p>Phase 1 is about connection. You learn to engage the bigger structural muscles — glutes, hamstrings, psoas, deep core — so the smaller, reactive ones around the spine can stop doing a job they were never meant to do. Breath tells you if a range is actually safe. If you can inhale through the movement, the body is still with you. If you hold your breath, tension is already leaving.</p>
-            <ul>
-              <li>Reconnect the muscles that should be doing the work</li>
-              <li>Use breath as a test of safety, not a cue card</li>
-              <li>Daily work you can start without a gym</li>
-            </ul>
+            <h3>Find a starting point your body can trust.</h3>
+            <p>Learn how to slow down the noise, reconnect to your body, and begin moving without forcing it. Gentle, accessible starting work. Breathing and awareness. Foundational movement you can do lying down or seated. No equipment required.</p>
           </article>
           <article class="phase phase--2">
             <div class="phase__meta">
               <span class="phase__num">02</span>
-              <span class="phase__tag">Intensity · muscle quality</span>
+              <span class="phase__tag">Restoring Confidence</span>
             </div>
-            <h3>Restoring Confidence</h3>
-            <p>Once those muscles can fire, we add intensity without dumping the load into your spine. Less skill. Less slow grinding. More honest work — carries, sleds, faster efforts — so the back learns it does not have to take over. This is how confidence gets built: not by adding another clever exercise, but by proving the right muscles can take stress.</p>
-            <ul>
-              <li>Push intensity with the least extra skill</li>
-              <li>Build quality in the muscles that keep you safe</li>
-              <li>Teach the back it does not have to freak out</li>
-            </ul>
+            <h3>Build capacity without chasing the old fear pattern.</h3>
+            <p>Once you have a base, begin building more physical stress and more trust in what your body can do. Progressive movement and loading. Strength under manageable stress. Intensity with less extra skill piled on top.</p>
           </article>
           <article class="phase phase--3">
             <div class="phase__meta">
               <span class="phase__num">03</span>
-              <span class="phase__tag">Clay · consistency</span>
+              <span class="phase__tag">Sustaining Freedom</span>
             </div>
-            <h3>Sustaining Freedom</h3>
-            <p>Phase 3 is not a finish line. The body likes old patterns. Flares can still show up. The work here is catching them earlier, keeping Phase 1 as maintenance, and going back to sport, training, and daily life without starting from zero every time. Nothing about this is linear. The point is to shrink the amplitude of the mistake.</p>
-            <ul>
-              <li>Keep the daily practices that created safety</li>
-              <li>Return to skill and life with better listening</li>
-              <li>Use a flare as information, not a verdict</li>
-            </ul>
+            <h3>Return to the life you want, with a process you understand.</h3>
+            <p>Integrate the work into training, work, hobbies, carrying, running, and lifting. Recognize a flare without panic. Return to the tools when new stress shows up. Phase 3 is not a finish line. It is consistency.</p>
           </article>
         </div>
-        <p class="phase-goal">This is not a magical program. It is a set of tools. You stay in a phase as long as you need — based on how safe you feel, how much work you are putting in, and what your body is telling you today.</p>
+        <div class="mid-cta__box mid-cta__box--after">
+          <div>
+            <p class="eyebrow">The complete system</p>
+            <h2>All three phases, two calls with Richard, lifetime access.</h2>
+          </div>
+          <a class="btn btn--primary" href="https://moved.thinkific.com/enroll/2481437?price_id=3278196" target="_blank" rel="noopener noreferrer" data-cta="complete" data-placement="phases">Start the complete system — $299</a>
+        </div>
       </div>
     </section>
 
-    <section class="section section--linen" id="different">
+    <section class="section" id="offers">
       <div class="wrap">
-        <p class="section-kicker">What makes this different</p>
-        <h2>This is not generic rehab with better lighting.</h2>
-        <div class="diff-grid">
-          <article class="diff">
-            <h3>Root-cause, not symptom-chasing</h3>
-            <p>We look for the structural muscles that stopped firing — not another way to quiet the sore spot for a week.</p>
+        <p class="section-kicker">Choose your path</p>
+        <h2>Start where you are.</h2>
+        <p class="section__intro">Not sure where to begin? If you are in active pain, start with Phase 1. If you are ready for the complete path, choose Fixing Back Pain For Good.</p>
+        <div class="offer-grid">
+          <article class="offer-card offer-card--primary">
+            <p class="eyebrow">Primary</p>
+            <h3>Fixing Back Pain For Good</h3>
+            <p class="offer-card__positioning">The complete three-phase system</p>
+            <p>For the person who wants the full process — from safety to confidence to returning to activity — and two online calls with Richard as part of the course.</p>
+            <p class="offer-card__price"><span>$299</span> Self-paced video course + 2 calls with Richard</p>
+            <ul>
+              <li>All three phases: Reclaiming Safety, Restoring Confidence, Sustaining Freedom</li>
+              <li>Self-paced video course</li>
+              <li>Two online calls with Richard</li>
+              <li>Lifetime access and updates</li>
+              <li>No equipment or gym membership required</li>
+            </ul>
+            <a class="btn btn--primary" href="https://moved.thinkific.com/enroll/2481437?price_id=3278196" target="_blank" rel="noopener noreferrer" data-cta="complete" data-placement="offers">Start the complete system — $299</a>
+            <p class="offer-card__note">100% money-back if you do not feel a difference. Email <a href="mailto:info@richardaceves.com">info@richardaceves.com</a>. <a href="https://www.richardaceves.com/refund-policy" target="_blank" rel="noopener noreferrer">Refund policy</a>.</p>
           </article>
-          <article class="diff">
-            <h3>Tension over position</h3>
-            <p>A position can look fine and still be wrong. The question is whether the right muscles are holding the work, or whether the back is picking up the slack.</p>
+          <article class="offer-card offer-card--secondary">
+            <p class="eyebrow eyebrow--stone">Entry</p>
+            <h3>Fixing Back Pain: Phase 1</h3>
+            <p class="offer-card__positioning">Find safety — start here if you are in pain now.</p>
+            <p>For the person in active pain or nervous around movement who needs a gentle, clear starting point — without forcing range or intensity yet.</p>
+            <p class="offer-card__price"><span>$79</span> Self-paced video program</p>
+            <ul>
+              <li>Pre-recorded Phase 1 guidance</li>
+              <li>Step-by-step techniques to calm and reconnect</li>
+              <li>Foundational work that can be done lying down or seated</li>
+              <li>No equipment or gym membership required</li>
+            </ul>
+            <a class="btn btn--ghost" href="https://moved.thinkific.com/enroll/3250812?price_id=4144370" target="_blank" rel="noopener noreferrer" data-cta="phase1" data-placement="offers">Start Phase 1 — $79</a>
+            <p class="offer-card__note">If you have a genuine problem accessing the materials, email us within 14 days and we will make it right — access fix or refund. <a href="https://www.richardaceves.com/refund-policy" target="_blank" rel="noopener noreferrer">Refund policy</a>.</p>
           </article>
-          <article class="diff">
-            <h3>The exercise is a tool. You do the work.</h3>
-            <p>Another clever movement will not save you. Presence, tension, and breath inside the movement will. That is the part most programs skip.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--linen" id="phase1">
+      <div class="wrap wrap--split">
+        <div class="prose">
+          <p class="section-kicker">Phase 1</p>
+          <h2>When your body feels unsafe, do not start by trying to prove it wrong.</h2>
+          <p>Phase 1 is not about doing nothing. It is about doing enough of the right thing that your body has a reason to trust movement again.</p>
+          <p>You begin with a daily walking practice adapted to your capacity, foundational calf work, and SWAMI — a breath and isometric practice used in the course to help you notice tension and stay present. You learn to notice breathing, effort, and your response to movement before you add more intensity.</p>
+          <p>Progress is individual. Start where you are, pay attention to your response, and move through the phase at the pace your body can handle.</p>
+          <div class="btn-row">
+            <a class="btn btn--ghost" href="https://moved.thinkific.com/enroll/3250812?price_id=4144370" target="_blank" rel="noopener noreferrer" data-cta="phase1" data-placement="phase1">Start Phase 1 — $79</a>
+          </div>
+        </div>
+        <figure class="story__photo">
+          <img src="images/richard-assessment.jpg" alt="Richard Aceves assessing a client’s movement during a training session" width="2048" height="1365" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="richard">
+      <div class="wrap--wide story">
+        <figure class="story__photo">
+          <img src="images/richard-laugh.jpg" alt="Richard Aceves smiling during a coaching session" width="2048" height="1365" loading="lazy">
+        </figure>
+        <div class="story__copy">
+          <p class="section-kicker">The person behind the system</p>
+          <h2>I did not build this from a textbook.</h2>
+          <p>At 18, a rockslide hit me at 5,000 meters. My hip crushed into more than 35 pieces. I spent five months bedridden, relearned how to walk, and went through six surgeries — including a double ulnar replacement. The medical prognosis was simple: live with the pain, stay sedentary, deal with it.</p>
+          <p>I chose a different route. I taught myself to walk again. I started studying movement, discomfort, capacity, and the relationship between stress and the body — first because I had to, then because other people were stuck in the same loop I had been in.</p>
+          <p>My outcome is not a promise of yours. Bodies are different. Histories are different. I built this because people deserve more than being told to avoid their body forever.</p>
+          <p class="muted">Richard Aceves is a movement coach, not a physician or physical therapist. This course is education, not treatment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--linen" id="scope">
+      <div class="wrap">
+        <p class="section-kicker">Scope</p>
+        <h2>This is not another random back-pain program.</h2>
+        <div class="scope-grid">
+          <article class="scope-card">
+            <h3>This is</h3>
+            <ul>
+              <li>A self-paced education process</li>
+              <li>A three-phase system built around safety, confidence, and sustainable movement</li>
+              <li>A way to understand and work with your own patterns over time</li>
+              <li>A practical place to start when you are tired of guessing</li>
+              <li>A framework you can return to when life, stress, training, or pain changes</li>
+            </ul>
           </article>
-          <article class="diff">
-            <h3>Not a six-week script</h3>
-            <p>You stay in a phase as long as you need. Some bodies move faster. Some need more time. The course is built for that, not for a calendar.</p>
-          </article>
-          <article class="diff">
-            <h3>Lived experience and years of hands-on coaching</h3>
-            <p>This was built from Richard’s own recovery and thousands of assessments. It is not theory dressed up as a course.</p>
-          </article>
-          <article class="diff">
-            <h3>Tools for the long haul, not a temporary fix</h3>
-            <p>Phase 1 stays with you. When a flare tries to come back — and it might — you have a way to catch it and come back to center.</p>
+          <article class="scope-card scope-card--not">
+            <h3>This is not</h3>
+            <ul>
+              <li>A diagnosis</li>
+              <li>Medical care, physical therapy, or a replacement for a licensed clinician</li>
+              <li>A promise that every pain problem has one cause</li>
+              <li>A six-week quick fix</li>
+              <li>A demand to push through sharp, worsening, unexplained, or concerning symptoms</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -272,245 +264,179 @@
 
     <section class="section" id="proof">
       <div class="wrap">
-        <p class="section-kicker">Social proof</p>
-        <h2>What changes when the pattern is found.</h2>
-        <p class="section__intro">Real people. Real bodies. The language is theirs. If a quote is still being confirmed for this page, it is marked clearly so it can be swapped in.</p>
+        <p class="section-kicker">From people who did the work</p>
+        <h2>What changes when you stop treating your body like the enemy.</h2>
+        <p class="section__intro">These messages come from the approved testimonial folder. Quotes are the speakers’ words. Names are used only when the source includes them.</p>
+
+        <article class="quote-card quote-card--featured">
+          <blockquote>“Back in the 300 club this morning! Can’t believe I nearly had a hip replacement.”</blockquote>
+          <footer>
+            <cite>@dredcaddye</cite>
+            <span class="role">Returned to heavy lifting after nearly facing a hip replacement · Instagram story tagging @rarebarracuda</span>
+          </footer>
+        </article>
+
         <div class="proof-grid">
-          <article class="quote-card">
-            <blockquote>“Two years ago we arrived in Amsterdam, met with Richard and he got me out of pain during our first session. That forever changed my life. It was incredible and we cancelled my surgery that week. I train with intention now. I move better and I’m no longer in pain.”</blockquote>
-            <footer>
-              <cite>Campbell</cite>
-              <span class="role">Client · cancelled hip replacement</span>
-            </footer>
-          </article>
+          <!-- TODO: Confirm testimonial permission and approved attribution before publishing. Drive source IMG_6847.jpg includes no name. -->
           <article class="quote-card">
             <blockquote>“That session helped so much. Who knew that going heavier would relieve the hip pain? Also, I felt so calm afterward; it was like stress left the body with each rep. It has been the best night’s sleep in months, and there is no hip or back tightness in the morning!”</blockquote>
             <footer>
-              <cite>Private client</cite>
-              <span class="role">Hip and back tightness that used to show up every morning</span>
+              <cite>Client</cite>
+              <span class="role">Hip and back tightness that used to show up in the morning · approved message</span>
+            </footer>
+          </article>
+          <!-- TODO: Confirm testimonial permission and approved attribution before publishing. Drive source IMG_7697.jpg includes no name. -->
+          <article class="quote-card">
+            <blockquote>“Okkkk had the best sesh today! Did sled drags, sprints and pushes. Belt squat/marches, calf raises… That was intense… Zero hip pain! The guy who owns the gym came up and said hi… and the first thing he said to me was that I was moving way better.”</blockquote>
+            <footer>
+              <cite>Client</cite>
+              <span class="role">Returned to load without the old hip pain · approved message</span>
+            </footer>
+          </article>
+          <!-- TODO: Confirm testimonial permission and approved attribution before publishing. Drive source IMG_1897_edited.jpg includes no name. -->
+          <article class="quote-card">
+            <blockquote>“When I woke up in the morning, I felt no tension in the left hip… Then I sat down and tried to connect to the left hammies… and the tension on the hip disappears right away.”</blockquote>
+            <footer>
+              <cite>Client</cite>
+              <span class="role">Left hip tension after connection work · approved message</span>
             </footer>
           </article>
         </div>
-        <article class="case-study">
-          <p class="eyebrow">Mini case study</p>
-          <h3>The pain was not random. The body was protecting something.</h3>
-          <div class="timeline">
-            <div>
-              <strong>Before</strong>
-              Years of hip pain. Multiple surgeons. A replacement already on the calendar. Movement felt like it was disappearing.
-            </div>
-            <div>
-              <strong>What Richard saw</strong>
-              The joint was not the whole story. The bracing pattern around it was doing most of the damage.
-            </div>
-            <div>
-              <strong>After</strong>
-              Out of pain in the first session. Surgery cancelled that week. Training continued with intention — not fear.
-            </div>
-          </div>
-        </article>
-        <article class="quote-card">
-          <blockquote>“Okkkk had the best sesh today! Did sled drags, sprints and pushes. Belt squat/marches, calf raises — that was intense. Zero hip pain! The guy who owns the gym came up and said hi, and the first thing he said to me was that I was moving way better.”</blockquote>
-          <footer>
-            <cite>Gym client</cite>
-            <span class="role">Returned to load without the old hip pain</span>
-          </footer>
-        </article>
-        <div class="video-card" id="method">
-          <img src="images/method-video.jpg" alt="Richard Aceves speaking on a beach about his method" width="1280" height="720">
-          <button type="button" data-open-video aria-label="Watch Richard explain the method">
-            <span>Founder video</span>
-            <strong>Watch Richard explain the method</strong>
-          </button>
-        </div>
-        <p class="placeholder-note">Video testimonial slot — drop in Nikki’s clip or a new member story here when ready.</p>
       </div>
     </section>
 
-    <section class="section section--linen" id="offer">
+    <section class="section section--linen" id="faq">
       <div class="wrap">
-        <p class="section-kicker">What you get</p>
-        <h2>A structured path. Not another pile of exercises.</h2>
-        <p class="section__intro">This is Richard’s system, applied to one problem: chronic and recurring back pain. You get the same sequence he teaches in the course — connection first, then intensity, then consistency — and the daily practices that make it usable.</p>
-        <div class="deliver-grid">
-          <article class="deliver">
-            <h3>A way to read the pattern</h3>
-            <p>Simple anatomy, in Richard’s language: which bigger muscles should be working, why the smaller ones start screaming, and how displaced tension shows up as hip, low-back, or mid-back discomfort.</p>
-          </article>
-          <article class="deliver">
-            <h3>Phase 1 work you can start now</h3>
-            <p>Walking, connection work, and SWAMI breath-and-tension practice. No gym required. The point is to feel the right muscles fire, not to collect more exercises.</p>
-          </article>
-          <article class="deliver">
-            <h3>A 3-phase progression</h3>
-            <p>Safety, then confidence, then consistency. You do not skip the part your nervous system is still asking for. You do not jump to skill before the structure can take it.</p>
-          </article>
-        </div>
-        <div class="horizon">
-          <article>
-            <h4>Short-term</h4>
-            <p>Daily practices that start rebuilding connection — and a way to know, through breath, whether a movement is still safe today.</p>
-          </article>
-          <article>
-            <h4>Medium-term</h4>
-            <p>Intensity without dumping load into the spine. Carries, sled work, and faster efforts once the right muscles can take the stress.</p>
-          </article>
-          <article>
-            <h4>Long-term</h4>
-            <p>Phase 1 as maintenance. Tools for catching a flare earlier. A way back to sport, training, and daily life that does not depend on a six-week plan.</p>
-          </article>
-        </div>
-        <div class="photo-pair">
-          <figure class="story__photo offer-photo">
-            <img src="images/richard-assessment.jpg" alt="Richard Aceves assessing a client’s movement in a training session" width="2048" height="1365" loading="lazy">
-          </figure>
-          <figure class="story__photo offer-photo">
-            <img src="images/richard-coaching.jpg" alt="Richard Aceves spotting a client during a training session" width="2048" height="1365" loading="lazy">
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="wrap">
-        <p class="section-kicker">Questions people actually ask</p>
+        <p class="section-kicker">Questions</p>
         <h2>Let’s talk through the objections.</h2>
         <div class="faq-list">
           <article class="faq-item">
             <h3>
-              <button type="button" aria-expanded="false">
-                What if I’m in pain right now?
+              <button type="button" id="faq-btn-which" aria-expanded="false" aria-controls="faq-panel-which">
+                Which program should I start with?
                 <span aria-hidden="true">+</span>
               </button>
             </h3>
-            <div class="answer">
-              <p>Then we start there. Phase 1 is connection work, not a test of how much you can tolerate. A lot of it can be done walking, standing, or lying down. You do not have to push through pain to begin. Breath tells you when to stay and when to back off.</p>
+            <div class="answer" id="faq-panel-which" role="region" aria-labelledby="faq-btn-which" hidden>
+              <p>If you are in active pain, feel anxious around movement, or need a simpler place to begin, start with Phase 1. If you are ready to work through the full process — from safety to confidence to a longer-term return to activity — choose Fixing Back Pain For Good.</p>
             </div>
           </article>
           <article class="faq-item">
             <h3>
-              <button type="button" aria-expanded="false">
-                What if I’ve already tried PT or chiropractic?
+              <button type="button" id="faq-btn-gear" aria-expanded="false" aria-controls="faq-panel-gear">
+                Do I need equipment or a gym membership?
                 <span aria-hidden="true">+</span>
               </button>
             </h3>
-            <div class="answer">
-              <p>Most people who come here already have. Stretching the tight hip flexor, adjusting the joint, needling the sore spot — that often treats the messenger. This work looks for the structural muscles that stopped firing, and why the nervous system sent the job somewhere else. You can keep working with your clinician. This is usually the missing layer.</p>
+            <div class="answer" id="faq-panel-gear" role="region" aria-labelledby="faq-btn-gear" hidden>
+              <p>No. Both programs are designed to begin without a gym membership or special equipment.</p>
             </div>
           </article>
           <article class="faq-item">
             <h3>
-              <button type="button" aria-expanded="false">
-                Is this just another exercise program?
+              <button type="button" id="faq-btn-weeks" aria-expanded="false" aria-controls="faq-panel-weeks">
+                Is this a six-week program?
                 <span aria-hidden="true">+</span>
               </button>
             </h3>
-            <div class="answer">
-              <p>No. If it were, stretching and generic rehab would have already solved it. Richard’s line in the course is simple: the exercise is not what changes this. You are. You learn how to create the right tension, how to use breath as a signal, and how to progress without jumping to skill too early.</p>
+            <div class="answer" id="faq-panel-weeks" role="region" aria-labelledby="faq-btn-weeks" hidden>
+              <p>No. The full course is organized in phases, not around a deadline. You move forward based on your capacity, your response, and the work you put in. Progress is not always linear.</p>
             </div>
           </article>
           <article class="faq-item">
             <h3>
-              <button type="button" aria-expanded="false">
-                What if movement usually makes things worse?
+              <button type="button" id="faq-btn-full" aria-expanded="false" aria-controls="faq-panel-full">
+                What is included in Fixing Back Pain For Good?
                 <span aria-hidden="true">+</span>
               </button>
             </h3>
-            <div class="answer">
-              <p>Then your system is still protecting you. That is information. We do not start by adding skill or grinding slow tempos into a spine that is already on guard. We start by reconnecting the muscles that should be doing the work. If you have to hold your breath to complete a movement, tension is already leaving. That is the cue to change the input — not a reason to quit your body.</p>
+            <div class="answer" id="faq-panel-full" role="region" aria-labelledby="faq-btn-full" hidden>
+              <p>The complete course includes all three phases — Reclaiming Safety, Restoring Confidence, and Sustaining Freedom — plus self-paced video lessons, two online calls with Richard, and lifetime access and updates.</p>
             </div>
           </article>
           <article class="faq-item">
             <h3>
-              <button type="button" aria-expanded="false">
-                How long until I notice a difference?
+              <button type="button" id="faq-btn-p1" aria-expanded="false" aria-controls="faq-panel-p1">
+                What is included in Phase 1?
                 <span aria-hidden="true">+</span>
               </button>
             </h3>
-            <div class="answer">
-              <p>This is not a six-week countdown. Richard does not tell you what to do for the next calendar block. You stay in each phase as long as you need — based on how safe you feel and how much work you are putting in. Some people feel a shift as they reconnect. The body still likes old patterns. The point is tools you can keep using, not a finish date.</p>
+            <div class="answer" id="faq-panel-p1" role="region" aria-labelledby="faq-btn-p1" hidden>
+              <p>Phase 1 includes pre-recorded guidance for the safety phase, step-by-step practices to help you begin reconnecting to movement, and foundational work that can be done lying down or seated. No equipment or gym membership is required.</p>
             </div>
           </article>
           <article class="faq-item">
             <h3>
-              <button type="button" aria-expanded="false">
-                What if I’m afraid to load my body again?
+              <button type="button" id="faq-btn-medical" aria-expanded="false" aria-controls="faq-panel-medical">
+                Does this replace medical care or physical therapy?
                 <span aria-hidden="true">+</span>
               </button>
             </h3>
-            <div class="answer">
-              <p>That fear makes sense. After enough flare-ups, the body predicts the next one. Phase 1 is how we change that prediction — by proving the right muscles can work in a range that still feels safe. Load and intensity come back in Phase 2, with less skill piled on top, so the spine is not asked to hold what the glutes and hamstrings should be holding.</p>
+            <div class="answer" id="faq-panel-medical" role="region" aria-labelledby="faq-btn-medical" hidden>
+              <p>No. This is educational movement guidance. It does not diagnose, treat, or replace care from a licensed healthcare professional. If you have a diagnosis, are post-surgical, have worsening symptoms, or are unsure whether it is appropriate to exercise, speak with your licensed clinician first.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-history" aria-expanded="false" aria-controls="faq-panel-history">
+                What if I have a disc issue, sciatica, or a history of surgery?
+                <span aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="answer" id="faq-panel-history" role="region" aria-labelledby="faq-btn-history" hidden>
+              <p>Many people looking for a more structured movement approach have complex histories. This program cannot determine what is appropriate for you individually. If you have a diagnosed condition, recent surgery, progressive symptoms, weakness, numbness, bowel or bladder changes, fever, unexplained weight loss, or any other concerning symptoms, seek advice from a qualified licensed medical professional before starting.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-access" aria-expanded="false" aria-controls="faq-panel-access">
+                How do I access the course?
+                <span aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="answer" id="faq-panel-access" role="region" aria-labelledby="faq-btn-access" hidden>
+              <p>Checkout happens on Thinkific through Moved Academy. After you purchase, Thinkific provides the course login you use to watch the videos. If you already have a Moved Academy Thinkific account, use that login. If you cannot get in, email <a href="mailto:info@richardaceves.com">info@richardaceves.com</a> with your order email and the product name.</p>
+              <!-- TODO: Confirm exact Thinkific post-purchase email wording before launch. -->
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3>
+              <button type="button" id="faq-btn-refund" aria-expanded="false" aria-controls="faq-panel-refund">
+                What is the refund policy?
+                <span aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div class="answer" id="faq-panel-refund" role="region" aria-labelledby="faq-btn-refund" hidden>
+              <p>Refunds depend on which offer you bought. From the official <a href="https://www.richardaceves.com/refund-policy" target="_blank" rel="noopener noreferrer">Refund Policy</a>:</p>
+              <p>Fixing Back Pain For Good (full course) carries the 100% money-back guarantee stated on the program page: if you do not feel a difference, email us and we will refund the course price.</p>
+              <p>Fixing Back Pain Phase 1 is a low-priced entry offer. If you have a genuine problem accessing the materials, email us within 14 days of purchase and we will make it right — access fix or refund.</p>
+              <p>Email <a href="mailto:info@richardaceves.com">info@richardaceves.com</a> with your name, order email, what you bought, and why you are asking.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--linen" id="close">
+    <section class="section" id="close">
       <div class="wrap--wide final">
         <figure class="final__photo">
-          <img src="images/richard-programs.jpg" alt="Richard Aceves sitting in a training space, ready to teach" width="1365" height="2048">
+          <img src="images/richard-programs.jpg" alt="Richard Aceves sitting in a training space" width="1365" height="2048" loading="lazy">
         </figure>
         <div>
           <p class="section-kicker">A way forward</p>
-          <h2>Your body is not broken. Your pain is not random.</h2>
-          <p>You are not crazy. You are not weak. And this is not something you just have to live with.</p>
-          <p>There is a pattern underneath the flare-ups. There is a way to understand it. And there is a structured path — safety, then confidence, then consistency — with a guide who had to find that path in his own body first.</p>
-          <p>Richard is that guide. The next step is an assessment, not a guess.</p>
+          <h2>You do not need to keep guessing.</h2>
+          <p>Start with the path that matches where you are today. If you are in pain now, start by building safety. If you are ready to work through the full process, take the complete system.</p>
           <div class="btn-row btn-row--close">
-            <a class="btn btn--primary" href="#apply">Book Your Assessment</a>
-            <a class="btn btn--ghost btn--play" href="#method" data-open-video>Watch Richard Explain The Method</a>
+            <a class="btn btn--primary" href="https://moved.thinkific.com/enroll/2481437?price_id=3278196" target="_blank" rel="noopener noreferrer" data-cta="complete" data-placement="final">Start the complete system — $299</a>
+            <a class="btn btn--ghost" href="https://moved.thinkific.com/enroll/3250812?price_id=4144370" target="_blank" rel="noopener noreferrer" data-cta="phase1" data-placement="final">Start Phase 1 — $79</a>
           </div>
-          <div class="guarantee">
+          <p class="scope-line">Educational movement guidance. Read the medical disclaimer before beginning.</p>
+          <div class="guarantee" id="disclaimer">
             <div>
-              <p class="eyebrow">100% money-back guarantee</p>
-              <h3>If this is not the right fit, you are not stuck with it.</h3>
-              <p>The guarantee applies across Fixing Back Pain For Good offers. I would rather you leave than stay in a system that does not serve you.</p>
+              <p class="eyebrow">Medical disclaimer</p>
+              <p>Fixing Back Pain For Good and Fixing Back Pain: Phase 1 provide educational movement guidance only. They are not medical advice and do not diagnose, treat, cure, or prevent any condition. Stop and seek care from a qualified licensed healthcare professional for sharp, worsening, unexplained, or concerning symptoms, or if you are unsure whether exercise is appropriate for you.</p>
+              <p class="muted">Richard Aceves is a movement coach, not a physician, physical therapist, or mental-health clinician. Nothing on this page is a substitute for care from a licensed clinician. You use the programs at your own risk. Full language: <a href="https://www.richardaceves.com/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a>.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="apply">
-      <div class="wrap apply-layout">
-        <div>
-          <p class="section-kicker">Apply to join</p>
-          <h2>Book your assessment.</h2>
-          <p>Tell me what you’ve been dealing with and what you’ve already tried. Keep it short. I will use this to see whether this system is the right next step — not to sell you a generic plan.</p>
-          <p class="muted">This is a sub-brand of Richard Aceves, not a faceless program. You are asking to work inside his method.</p>
-        </div>
-        <div class="apply-card">
-          <form class="form" data-assessment-form>
-            <div class="field">
-              <label for="name">First name</label>
-              <input id="name" name="name" type="text" autocomplete="given-name" required placeholder="Your first name">
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com">
-            </div>
-            <div class="field">
-              <label>What have you already tried?</label>
-              <div class="checks">
-                <label><input type="checkbox" name="tried" value="Physical therapy"> Physical therapy</label>
-                <label><input type="checkbox" name="tried" value="Chiropractic"> Chiropractic</label>
-                <label><input type="checkbox" name="tried" value="Injections"> Injections</label>
-                <label><input type="checkbox" name="tried" value="Surgery"> Surgery</label>
-                <label><input type="checkbox" name="tried" value="Rest or stretching"> Rest or stretching</label>
-                <label><input type="checkbox" name="tried" value="Generic exercise programs"> Generic exercise programs</label>
-              </div>
-            </div>
-            <div class="field">
-              <label for="story">What’s going on with your back?</label>
-              <textarea id="story" name="story" placeholder="A few sentences is enough."></textarea>
-            </div>
-            <button class="btn btn--primary" type="submit">Apply To Join</button>
-            <p class="form-note">Short form. No pressure sequence. You’ll get a reply at info@richardaceves.com.</p>
-          </form>
-          <div class="form-success">
-            <h3>Got it.</h3>
-            <p>Your email app should open with the details filled in. If it doesn’t, send the same note to info@richardaceves.com and I’ll take it from there.</p>
           </div>
         </div>
       </div>
@@ -522,64 +448,34 @@
       <div>
         <img class="footer-logo" src="images/logo-clay.png" alt="Richard Aceves" width="160" height="60">
         <h2>Fixing Back Pain For Good</h2>
-        <p class="muted">A sub-brand of Richard Aceves. Root-cause, nervous-system-first work for people tired of recurring back pain.</p>
+        <p class="muted">A sub-brand of Richard Aceves. Educational movement guidance for people tired of recurring back discomfort and temporary relief.</p>
       </div>
       <div class="footer-links">
         <a href="https://www.richardaceves.com">RichardAceves.com</a>
-        <a href="https://www.richardaceves.com/work-with-me">Work with Richard</a>
+        <a href="https://www.richardaceves.com/programs">Programs</a>
+        <a href="https://www.richardaceves.com/backpain">Current back-pain page</a>
         <a href="mailto:info@richardaceves.com">info@richardaceves.com</a>
         <a href="https://www.instagram.com/rarebarracuda/">Instagram</a>
-        <a href="https://youtube.com/@richardaceves">YouTube</a>
+        <a href="https://www.youtube.com/@richardaceves">YouTube</a>
         <a href="https://www.linkedin.com/in/richardaceves/">LinkedIn</a>
       </div>
     </div>
     <div class="wrap legal">
-      <span>© 2026 Richard Aceves</span>
+      <span>© 2026 Richard Aceves / Golden Skulls Inc</span>
       <a href="https://www.richardaceves.com/privacy">Privacy</a>
       <a href="https://www.richardaceves.com/terms">Terms</a>
       <a href="https://www.richardaceves.com/refund-policy">Refund Policy</a>
+      <a href="#disclaimer">Disclaimer</a>
     </div>
   </footer>
 
-  <div class="mobile-bar">
-    <a class="btn btn--primary" href="#apply">Book Your Assessment</a>
-  </div>
-
-  <div class="modal" id="apply-modal" role="dialog" aria-modal="true" aria-labelledby="apply-modal-title">
-    <div class="modal__backdrop" data-close-modal></div>
-    <div class="modal__panel">
-      <button class="modal__close" type="button" data-close-modal aria-label="Close">×</button>
-      <p class="eyebrow">Assessment-first</p>
-      <h2 id="apply-modal-title">Book your assessment</h2>
-      <p class="muted">A few details. That’s it.</p>
-      <form class="form form--modal" data-assessment-form>
-        <div class="field">
-          <label for="modal-name">First name</label>
-          <input id="modal-name" name="name" type="text" required>
-        </div>
-        <div class="field">
-          <label for="modal-email">Email</label>
-          <input id="modal-email" name="email" type="email" required>
-        </div>
-        <div class="field">
-          <label for="modal-story">What’s going on with your back?</label>
-          <textarea id="modal-story" name="story"></textarea>
-        </div>
-        <button class="btn btn--primary" type="submit">Apply To Join</button>
-      </form>
-      <div class="form-success">
-        <h3>Got it.</h3>
-        <p>Send the note if your email app didn’t open, then we’ll take the next step.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Watch Richard explain the method">
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
     <div class="modal__backdrop" data-close-modal></div>
     <div class="modal__panel modal__panel--video">
+      <h2 id="video-modal-title" class="visually-hidden">Fixing Back Pain For Good — Intro</h2>
       <button class="modal__close" type="button" data-close-modal aria-label="Close video">×</button>
       <div class="video-frame">
-        <iframe id="method-video" title="Richard Aceves explains the method" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="intro-video" title="Fixing Back Pain For Good — Intro, 1 minute 27 seconds" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
