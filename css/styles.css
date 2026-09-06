@@ -851,10 +851,8 @@ p:last-child {
   font-weight: 600;
 }
 
-.quote-card .role {
-  display: block;
-  color: var(--stone);
-  font-size: 0.88rem;
+.quote-card + .quote-card {
+  margin-top: 1.1rem;
 }
 
 .case-study {
