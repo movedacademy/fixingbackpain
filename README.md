@@ -18,7 +18,7 @@ The one action on the page is **Book Your Assessment**. The short form at `#appl
 
 ## Swap-in assets
 
-- Founder video already uses Richard’s public method video.
+- Founder video already uses Richard’s public method video. If a host blocks YouTube embeds, swap in a self-hosted file in the same modal.
 - Nikki’s video testimonial has a labeled slot in the proof section.
 - Additional member quotes can replace the labeled placeholders without layout changes.
 

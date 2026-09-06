@@ -5,7 +5,7 @@
   const applyModal = document.getElementById("apply-modal");
   const videoModal = document.getElementById("video-modal");
   const videoFrame = document.getElementById("method-video");
-  const METHOD_VIDEO = "https://www.youtube.com/embed/4H5tdaAvLyk?autoplay=1&rel=0";
+  const METHOD_VIDEO = "https://www.youtube-nocookie.com/embed/4H5tdaAvLyk?autoplay=1&rel=0";
 
   const onScroll = () => {
     header?.classList.toggle("is-scrolled", window.scrollY > 8);
@@ -81,6 +81,18 @@
       }
     });
   });
+
+  const applySection = document.getElementById("apply");
+  const mobileBar = document.querySelector(".mobile-bar");
+  if (applySection && mobileBar && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        mobileBar.classList.toggle("is-hidden", entry.isIntersecting);
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(applySection);
+  }
 
   document.querySelectorAll("form[data-assessment-form]").forEach((form) => {
     form.addEventListener("submit", (event) => {
