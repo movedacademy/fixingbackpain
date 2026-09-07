@@ -223,7 +223,7 @@ p:last-child {
 .btn--ghost {
   background: transparent;
   color: var(--graphite);
-  border-color: var(--border);
+  border-color: color-mix(in srgb, var(--graphite) 28%, var(--border));
 }
 
 .btn--ghost:hover {
@@ -1465,17 +1465,23 @@ body.is-locked {
   overflow: hidden;
 }
 
-@media (max-width: 719px) {
+@media (max-width: 899px) {
   .hero .btn-row,
   .btn-row--close,
-  .mid-cta__box .btn {
+  .mid-cta__box {
+    grid-template-columns: 1fr;
+  }
+
+  .hero .btn-row,
+  .btn-row--close {
     flex-direction: column;
     align-items: stretch;
   }
 
   .hero .btn-row .btn,
   .btn-row--close .btn,
-  .mobile-nav .btn {
+  .mobile-nav .btn,
+  .mid-cta__box .btn {
     width: 100%;
   }
 
@@ -1531,7 +1537,6 @@ body.is-locked {
   }
 
   .mid-cta__box {
-    grid-template-columns: 1.4fr auto;
     padding: 1.8rem 1.8rem;
   }
 
@@ -1556,10 +1561,22 @@ body.is-locked {
   }
 
   .hero {
-    padding: 3.5rem 0 5.5rem;
+    padding: 2.6rem 0 4rem;
   }
 
-  .hero__grid,
+  .mid-cta__box {
+    grid-template-columns: 1.4fr auto;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-media {
+    display: none;
+  }
+
   .story,
   .final,
   .footer-grid,
@@ -1629,6 +1646,18 @@ body.is-locked {
 
   .hero-media__frame {
     min-height: 32rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__grid {
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .hero-media {
+    display: block;
   }
 }
 
