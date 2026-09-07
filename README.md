@@ -30,4 +30,11 @@ Checkout is on Thinkific (Moved Academy). Do not invent product IDs or swap thes
 
 ## Brand
 
-Palette, type, and voice follow the Fixing Back Pain For Good / Richard Aceves brand guidelines: Warm Ivory, Soft Linen, Graphite, Muted Stone, Bold Clay, Cormorant Garamond, Inter, Space Grotesk.
+Palette, type, and voice follow the Fixing Back Pain For Good / Richard Aceves brand guidelines: Warm Ivory, Soft Linen, Graphite, Muted Stone, Bold Clay, Cormorant Garamond, Inter.
+
+## Testimonial media
+
+Place approved clips in `testimonials/`:
+
+- `testimonials/client-instagram.mp4` — unnamed client talking-head (Drive Instagram export)
+- `testimonials/backpain-sucks.mp4` — Richard speaking, from the Drive file `Backpain sucks (1).mp4`

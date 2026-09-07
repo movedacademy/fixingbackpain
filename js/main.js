@@ -3,10 +3,8 @@
   const menuToggle = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
   const videoModal = document.getElementById("video-modal");
-  const videoFrame = document.getElementById("intro-video");
-  const INTRO_VIDEO =
-    "https://www.youtube-nocookie.com/embed/4VA50Fh3YYA?rel=0&modestbranding=1&autoplay=1";
-
+  const mediaSlot = videoModal?.querySelector("[data-media-slot]");
+  const modalTitle = document.getElementById("video-modal-title");
   let lastFocus = null;
 
   const onScroll = () => {
@@ -33,8 +31,11 @@
     el.addEventListener("click", (event) => {
       event.preventDefault();
       lastFocus = el;
-      if (videoFrame) videoFrame.src = INTRO_VIDEO;
-      openModal(videoModal);
+      const youtube = el.getAttribute("data-youtube");
+      const src = el.getAttribute("data-video-src");
+      const title = el.getAttribute("data-video-title") || "Video";
+      if (modalTitle) modalTitle.textContent = title;
+      openMedia({ youtube, src, title });
     });
   });
 
@@ -50,8 +51,8 @@
   });
 
   function getFocusable(modal) {
-    return [...modal.querySelectorAll("button, [href], iframe, [tabindex]:not([tabindex='-1'])")].filter(
-      (node) => !node.hasAttribute("disabled") && node.getAttribute("aria-hidden") !== "true"
+    return [...modal.querySelectorAll("button, [href], iframe, video, [tabindex]:not([tabindex='-1'])")].filter(
+      (node) => !node.hasAttribute("disabled")
     );
   }
 
@@ -69,19 +70,37 @@
     }
   }
 
-  function openModal(modal) {
-    if (!modal) return;
-    modal.classList.add("is-open");
+  function openMedia({ youtube, src, title }) {
+    if (!videoModal || !mediaSlot) return;
+    mediaSlot.innerHTML = "";
+    mediaSlot.classList.toggle("is-portrait", Boolean(src));
+    if (youtube) {
+      const iframe = document.createElement("iframe");
+      iframe.title = title || "Fixing Back Pain For Good — Intro";
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      iframe.src = `https://www.youtube-nocookie.com/embed/${youtube}?rel=0&modestbranding=1&autoplay=1`;
+      mediaSlot.append(iframe);
+    } else if (src) {
+      const video = document.createElement("video");
+      video.controls = true;
+      video.playsInline = true;
+      video.setAttribute("controlslist", "nodownload");
+      video.src = src;
+      video.setAttribute("title", title);
+      mediaSlot.append(video);
+      video.play().catch(() => {});
+    }
+    videoModal.classList.add("is-open");
     document.body.classList.add("is-locked");
-    const closeBtn = modal.querySelector("[data-close-modal].modal__close, .modal__close");
-    closeBtn?.focus();
+    videoModal.querySelector(".modal__close")?.focus();
   }
 
   function closeModal() {
     if (!videoModal?.classList.contains("is-open")) return;
     videoModal.classList.remove("is-open");
     document.body.classList.remove("is-locked");
-    if (videoFrame) videoFrame.src = "";
+    if (mediaSlot) mediaSlot.innerHTML = "";
     lastFocus?.focus();
   }
 
