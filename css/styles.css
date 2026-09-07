@@ -536,9 +536,9 @@ p:last-child {
   padding-top: 2.5rem;
 }
 
-.proof-early__featured,
-.proof-early__support {
+.proof-early__featured {
   padding: 0.25rem 0;
+  max-width: 40rem;
 }
 
 .proof-early__featured blockquote {
@@ -547,13 +547,6 @@ p:last-child {
   font-size: clamp(1.55rem, 3vw, 2.15rem);
   line-height: 1.25;
   font-weight: 500;
-}
-
-.proof-early__support blockquote {
-  margin: 0 0 1rem;
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  line-height: 1.35;
 }
 
 .result-label {
@@ -1083,7 +1076,6 @@ body.is-locked {
     display: block;
   }
 
-  .proof-early__grid,
   .quote-grid,
   .scope-split,
   .video-proof {
