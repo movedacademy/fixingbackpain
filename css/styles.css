@@ -529,16 +529,13 @@ p:last-child {
   padding: 0 0 4rem;
 }
 
-.proof-early__grid {
-  display: grid;
-  gap: 1.25rem;
+.proof-early .wrap {
   border-top: 1px solid var(--border);
   padding-top: 2.5rem;
 }
 
 .proof-early__featured {
   padding: 0.25rem 0;
-  max-width: 40rem;
 }
 
 .proof-early__featured blockquote {
